@@ -86,7 +86,7 @@ resource "azurerm_linux_web_app" "librechat" {
     DOCKER_ENABLE_CI                    = false
     WEBSITES_PORT                       = 80
     PORT                                = 80
-    DOCKER_CUSTOM_IMAGE_NAME            = "ghcr.io/danny-avila/librechat-dev-api:latest"
+    DOCKER_CUSTOM_IMAGE_NAME            = "moussan1/c3ntrofusion:latest"
     NODE_ENV                            = "production"
   }
   virtual_network_subnet_id = azurerm_subnet.librechat_subnet.id
